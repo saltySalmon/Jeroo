@@ -1,0 +1,35 @@
+@Java
+method moveToNextRow()
+{
+   if (isFacing(EAST))
+   {
+      turn(RIGHT);
+      hop();
+      turn(RIGHT);
+   }
+   else if (isFacing(WEST))
+   {
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+   }
+   pick();
+}
+
+method move()
+{
+   while(!(isWater(AHEAD) && isWater(LEFT) && isFacing(WEST)))
+   {
+      pick();
+      if (isWater(AHEAD))
+         moveToNextRow();
+      hop();
+   }
+}
+@@
+method main()
+{
+   Jeroo Joey = new Jeroo(0, 0);
+   
+   Joey.move();
+}
