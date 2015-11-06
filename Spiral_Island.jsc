@@ -1,0 +1,34 @@
+@Java
+method spiralIn()
+{
+   while (!isFlower(AHEAD))
+   {
+      if (isWater(AHEAD))
+         turn(RIGHT);
+         
+      if (!isFlower(AHEAD))
+         hop();
+   }
+}
+
+method spiralOut()
+{
+   while (!(isWater(AHEAD) && isNet(LEFT)))
+   {
+      if (isNet(AHEAD) || isWater(AHEAD))
+         turn(LEFT);
+      else if (isFlower(AHEAD))
+         turn(RIGHT);
+      
+      hop();
+   }
+}
+@@
+
+method main()
+{
+   Jeroo Joey = new Jeroo(0, 0);
+   
+   Joey.spiralIn();
+   Joey.spiralOut();
+}
