@@ -1,0 +1,46 @@
+@Java
+method move(){
+   while(!isFlower(AHEAD)){
+      if(isNet(AHEAD) || isNet(LEFT) || isNet(RIGHT) || isFlower(LEFT) || isFlower(RIGHT) || isWater(LEFT) || isWater(RIGHT) || isWater(AHEAD)){
+         if(isNet(AHEAD)){
+            turn(RIGHT);
+            hop(2);
+         }
+         if(isNet(LEFT)){
+            turn(RIGHT);
+            hop();
+         }
+         if(isNet(RIGHT)){
+            hop(3);
+         }
+         if(isFlower(LEFT)){
+            turn(RIGHT);
+            hop();
+         }
+         if(isFlower(RIGHT)){
+            hop();
+         }
+         if(isWater(LEFT)){
+            hop(2);
+         }
+         if(isWater(RIGHT)){
+            turn(LEFT);
+            hop(2);
+         }
+         if(isWater(AHEAD)){
+            turn(RIGHT);
+            hop(4);
+         }
+      }
+      else
+         hop(2);
+   }
+}
+@@
+method main(){
+
+   Jeroo Joey = new Jeroo(0,0);
+   
+   Joey.move();
+
+}
