@@ -1,0 +1,30 @@
+@Java
+
+@@
+
+method main()
+{
+   Jeroo Joey = new Jeroo(1);
+   Joey.turn(RIGHT);
+   Joey.hop();
+   Joey.turn(LEFT);
+   Joey.hop(2);
+
+   while(!(Joey.isNet(AHEAD) && Joey.isNet(LEFT) && Joey.isNet(RIGHT)))
+   {
+      Joey.turn(RIGHT);
+      Joey.hop();
+      if (!Joey.isNet(LEFT) && Joey.isNet(RIGHT))
+      {
+         Joey.turn(LEFT);
+         Joey.hop();
+      }
+   }
+   Joey.toss();
+   Joey.hop();
+}
+
+
+
+
+
