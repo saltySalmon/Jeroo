@@ -1,0 +1,20 @@
+@Java
+method move(){
+   while(!isFlower(AHEAD)){
+      hop();
+      plant();
+      if(isWater(AHEAD))
+         turn(RIGHT);
+   }
+}
+@@
+method main()
+{
+
+   Jeroo Joey = new Jeroo(96);
+   
+   Joey.plant();
+   Joey.move();
+   Joey.hop();
+   Joey.turn(RIGHT);
+}
