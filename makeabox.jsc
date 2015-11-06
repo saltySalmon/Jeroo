@@ -1,0 +1,20 @@
+@Java
+method move(){
+   hop(10);
+   plant();
+   turn(RIGHT);
+}
+@@
+method main(){
+
+   Jeroo Joey = new Jeroo(0,0,EAST,4);
+   
+   Joey.plant();
+   Joey.move();
+   Joey.move();
+   Joey.move();
+   Joey.hop(10);
+   Joey.turn(RIGHT);
+   Joey.hop();
+   
+}
