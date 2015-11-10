@@ -3,39 +3,39 @@ CS1 Jeroo Labs
 
 
 #Lab Description
-###FencedIn
+####FencedIn
 - FencedIn.jsc & FencedIn.jev
 
-###Box
+####Box
 - makeabox.jsc
  
-###Flowers
+####Flowers
 - surround_flowers.jsc
  
-###Pinball
+####Pinball
 - Pinball.jsc & Pinball.jev
 
-###Loops Spiral
+####Loops Spiral
 - Spiral_Island.jsc & Spiral_Island.jev
 
-###Waterhole
+####Waterhole
 - water.jsc & water.jev
 
-###Conditionals Spiral
+####Conditionals Spiral
 - SpiralMazeIsland1.jsc & SpiralMazeIsland1.jev
 
-###Alley Run
+####Alley Run
 - AlleyRunIsland.jsc & AlleyRunIsland.jev 
 
-###Chaos
+####Chaos
 - ChaosIsland.jsc & ChaosIsland.jev
 
-###Flower Maze
+####Flower Maze
 - flowermaze.jsc & FlowerMazeIsland.jev
 
-###Finding Betty
+####Finding Betty
 - findingbetty.jsc & FindingBetty.jev
 
-###Rescue Princess
+####Rescue Princess
 - rescue.jsc & PrincessIsland1.jev, PrincessIsland2.jev, PrincessIsland3.jev 
 
