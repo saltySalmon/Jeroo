@@ -1,0 +1,15 @@
+@Java
+method move(){
+   while(!(isWater(AHEAD) && isWater(RIGHT))){
+      if(!isClear(AHEAD)){
+         turn(RIGHT);
+      }
+      hop();
+   }
+}
+@@
+method main(){
+   Jeroo Joey = new Jeroo(1,0);
+   
+   Joey.move();
+}
