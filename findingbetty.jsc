@@ -1,0 +1,25 @@
+@Java
+method move(){
+  while (!isJeroo(AHEAD) && !(isFlower(LEFT) && isWater(AHEAD) && isFlower(RIGHT))){
+    if (isNet(AHEAD) || isWater(AHEAD) || (isFlower(AHEAD) && (isClear(RIGHT) || isClear(LEFT)))){
+      turn(RIGHT);
+      if (isNet(AHEAD) || isWater(AHEAD) || (isFlower(LEFT) && isClear(AHEAD) && isFlower(RIGHT))){
+        turn(LEFT);
+        turn(LEFT);
+      }
+    }
+    hop();
+  }
+}
+@@
+method main(){
+   Jeroo Barney = new Jeroo(1,0);
+   Jeroo Betty = new Jeroo(12,11,WEST);
+   
+   Barney.move();
+   Barney.turn(RIGHT);
+   Barney.turn(RIGHT);
+   Barney.move();
+   Betty.move();
+}
+
