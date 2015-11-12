@@ -30,7 +30,7 @@ CS1 Jeroo Labs
 ####[Chaos](sources/ChaosIsland.jsc)
 - ChaosIsland.jsc & ChaosIsland.jev
 
-####[Flower Maze](sources/
+####[Flower Maze](sources/flowermaze.jsc)
 - flowermaze.jsc & FlowerMazeIsland.jev
 
 ####[Finding Betty](sources/findingbetty.jsc)
